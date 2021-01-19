@@ -67,22 +67,12 @@ body{
 /* Cards */
 .card-testimonials{
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .cards{
     margin: 10px;
 }
-.photo-testimonials{
-    display: flex;
-    flex-direction: row;
-}
-.photo-testimonials img{
-    border-radius: 100%;
-    border: 3px solid rgb(207, 207, 207, .5);
-}
-.information-testimonials{
-    margin-left: 1rem;
-}
+
 /* Card - Colors  */
 .violet{
     background-color: var(--violet);
@@ -103,4 +93,43 @@ body{
 /* Cards - Information */
 .text-testimonials p{
     margin: 0.6rem 0 0.6rem 0;
+}
+
+.information-testimonials{
+    margin-left: 1rem;
+}
+.name-testimonials{
+    font-weight: 700;
+}
+.graduate-testimonials{
+    opacity: 0.6;
+    letter-spacing: 0.12rem;
+}
+.text-testimonials{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+}
+
+.commentary-testimonials{
+    margin-top: 1.8rem;
+    font-size: 16px;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.photo-testimonials{
+    display: flex;
+    flex-direction: row;
+}
+.photo-testimonials img{
+    width: 50px;
+    border-radius: 100%;
+    border: 3px solid rgb(207, 207, 207, .5);
+}
+
+
+.color-border img{
+    border:3px solid var(--violet);
 }
