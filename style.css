@@ -1,0 +1,106 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+/* Variavéis*/
+:root{
+    --violet: #7541c8;
+    --very-dark-gray-blue:#48556a;
+    --very-dark-black-blue:#19212e;
+    --light-gray:#cfcfcf;
+    --light-gray-blue:#ecf2f8;
+
+}
+/* Reset */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* Global */
+body{
+    background-color: var(--light-gray-blue);
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    overflow: hidden;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 10rem;
+}
+
+/* Grid */
+.grid-testimonials{
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.grid-template-area{
+    grid-template-areas: 
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5"
+    ;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+/* Cards */
+.card-testimonials{
+    padding: 2rem;
+    border-radius: 20px;
+}
+.cards{
+    margin: 10px;
+}
+.photo-testimonials{
+    display: flex;
+    flex-direction: row;
+}
+.photo-testimonials img{
+    border-radius: 100%;
+    border: 3px solid rgb(207, 207, 207, .5);
+}
+.information-testimonials{
+    margin-left: 1rem;
+}
+/* Card - Colors  */
+.violet{
+    background-color: var(--violet);
+    color: #FFF;
+}
+.light-blue{
+    background-color: var(--very-dark-gray-blue);
+    color: #FFF;
+}
+.white{
+    background-color: #FFF;
+    color: var(--very-dark-gray-blue);
+}
+.dark-blue{
+    background-color: var(--very-dark-black-blue);
+    color: #FFF;
+}
+/* Cards - Information */
+.text-testimonials p{
+    margin: 0.6rem 0 0.6rem 0;
+}
