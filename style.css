@@ -150,4 +150,15 @@ main{
     }
   }
 
+  @media (max-width: 768px){
+    main{
+      margin-top: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-template-rows: repeat(minmax(auto, auto));
+  }
+  .card-testimonials{
+    grid-column: unset;
+    grid-row: unset;
+  }
 
+}
