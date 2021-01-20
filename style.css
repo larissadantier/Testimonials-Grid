@@ -108,6 +108,7 @@ main{
   .card-4{
     grid-row: 2/3;
     grid-column: 2/4;
+    background-color: var(--very-dark-black-blue);
   }
   .card-5{
     grid-row: -1/1;
